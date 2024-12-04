@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:super_admin/helpers/app_colors.dart';
-import 'package:super_admin/views/auth/view/auth_view.dart';
+import 'package:super_admin/helpers/routes.dart';
+import 'package:super_admin/views/home/dashboard/view/dashboard_view.dart';
+import 'package:super_admin/views/home/main/view/main_view.dart';
+import 'package:super_admin/views/home/users/view/users_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,7 +23,12 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
         scaffoldBackgroundColor: AppColors.white,
       ),
-      home: const AuthView(),
+        getPages: Routes.routes,
+      home: MainView(),
+
+   
     );
   }
+
+ 
 }

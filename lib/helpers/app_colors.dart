@@ -7,5 +7,5 @@ class AppColors {
   static const secondary = Color(0xff598bff);
   static const aliceBlue = Color(0xFFF0F8FF);
   static const transparent = Colors.transparent;
-
+  static const gray = Color(0xFFC9C9C9);
 }

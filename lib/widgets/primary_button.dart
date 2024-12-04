@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:super_admin/helpers/app_colors.dart';
 import 'package:super_admin/helpers/styles.dart';
@@ -22,9 +23,10 @@ class PrimaryButton extends StatelessWidget {
           backgroundColor: WidgetStatePropertyAll(color ?? AppColors.primary),
         ),
         onPressed: press,
-        label: Text(
+        label: AutoSizeText(
           text.toString(),
           style: Styles.fontSmall.copyWith(color: AppColors.white),
+          maxLines: 1,
         ),
       ),
     );
